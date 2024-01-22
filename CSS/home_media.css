@@ -9,6 +9,7 @@
 
     .right-side ul {
         position: absolute;
+        z-index: 20;
         top: 0;
         right: 0;
         width: 100vw;
