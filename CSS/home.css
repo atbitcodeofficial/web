@@ -8,11 +8,12 @@ body {
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-    background: url(../Images/background.jpg);
+    /*background: url(../Images/background.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background: red;
 }
 
 html::-webkit-scrollbar {
