@@ -106,6 +106,8 @@ nav {
     -moz-transition: all 0.3s linear;
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
+    position: relative;
+    z-index: 20;
 }
 
 .right-side ul li {
