@@ -1,0 +1,108 @@
+@media screen and (max-width: 1000px) {
+    #section-2 {
+        height: auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    .right-side .hamburger {
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav-toggle {
+        background-color: red;
+    }
+
+    .right-side ul {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #7c7c7c;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 2;
+}
+
+
+    .right-side ul li a {
+        color: white;
+    }
+
+    .nav-toggle {
+        transform: translateX(100%);
+        -webkit-transform: translateX(100%);
+        -moz-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+        -o-transform: translateX(100%);
+    }
+
+    .top-cross {
+        transform: rotate(40deg);
+        -webkit-transform: rotate(40deg);
+        -moz-transform: rotate(40deg);
+        -ms-transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+    }
+
+    .bottom-cross {
+        transform: rotate(-40deg);
+        -webkit-transform: rotate(-40deg);
+        -moz-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+        -o-transform: rotate(-40deg);
+    }
+
+    .hidden {
+        opacity: 0;
+    }
+
+    #active {
+        color: black;
+        background-color: beige;
+        padding: 5px 10px;
+    }
+    #section-1 h1 {
+        font-size: 80px;
+    }
+    .footer {
+        flex-wrap: wrap;
+    }
+    .footer .row {
+        width: 100vw;
+    }
+    #section-2 {
+        gap: 0;
+        height: auto;
+    }
+    #section-2 .page {
+        width: 100vw;
+    }
+    #section-2 .page {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+}
+#section-2 #page-1 {
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+}
+
+@media screen and (max-width: 500px) {
+    #section-1 h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #section-1 h1 {
+        font-size: 40px;
+    }
+}
