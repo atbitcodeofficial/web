@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 error</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #ffdcdc;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            color: black;
+            font-size: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>404 Not Found :(</h1>
+    <p>error code: <span class="code"></span></p>
+    <script>
+        let codeTxt = document.querySelector(".code");
+        let alphabet = `abcdefghij`;
+        let number = 123456789;
+        let random1 = Math.random() * 10;
+        let random2 = Math.random() * 5;
+        let random3 = Math.random() * 5;
+        let random4 = Math.random() * 5;
+        let slicer1 = random1.toString().slice(0, random1.toString().indexOf(`.`));
+        let slicer2 = random2.toString().slice(0, random2.toString().indexOf(`.`));
+        let start1 = random3.toString().slice(0, random2.toString().indexOf(`.`));
+        let start2 = random4.toString().slice(0, random4.toString().indexOf(`.`));
+        console.log(slicer1, slicer2);
+        let code = alphabet.toString().slice(start1, slicer1) + number.toString().slice(start2, slicer2);
+        codeTxt.textContent = code;
+    </script>
+</body>
+
+</html>
