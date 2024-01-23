@@ -176,7 +176,7 @@ nav {
 
 #section-1 h1 {
     text-transform: uppercase;
-    font-family: cursive;
+    font-family: monospace;
     font-size: 90px;
     color: white;
 }
