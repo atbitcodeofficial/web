@@ -9,6 +9,7 @@
 
     .right-side ul {
         position: absolute;
+        top: 0;
         right: 0;
         width: 100vw;
         background-color: #7c7c7c;
@@ -74,7 +75,7 @@
     }
 }
 
-@media screen and (max-width: 30px) {
+@media screen and (max-width: 400px) {
     #section-1 h1 {
         font-size: 40px;
     }
