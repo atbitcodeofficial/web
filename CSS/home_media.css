@@ -1,6 +1,13 @@
+@media screen and (max-width: 1000px) {
+    #section-2 {
+        height: auto;
+    }
+}
 @media screen and (max-width: 900px) {
     .right-side .hamburger {
         display: block;
+        position: relative;
+        z-index: 2;
     }
 
     .nav-toggle {
@@ -18,7 +25,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
+        z-index: 2;
+}
 
 
     .right-side ul li a {
@@ -67,6 +75,24 @@
     .footer .row {
         width: 100vw;
     }
+    #section-2 {
+        gap: 0;
+        height: auto;
+    }
+    #section-2 .page {
+        width: 100vw;
+    }
+    #section-2 .page {
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+        -ms-border-radius: 0px;
+        -o-border-radius: 0px;
+}
+#section-2 #page-1 {
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
 }
 
 @media screen and (max-width: 500px) {
