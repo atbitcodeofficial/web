@@ -23,8 +23,8 @@
             </div>
             <div class="right-side side">
                 <ul class="ul nav-toggle">
-                    <li><a href="#" id="active">home</a></li>
-                    <li><a href="#">my projects</a></li>
+                    <li><a href="index.html" id="active">home</a></li>
+                    <li><a href="Pages/projects.html">my projects</a></li>
                     <li><a href="Pages/404.html">about me</a></li>
                     <li><a href="Pages/404.html">contact me</a></li>
                 </ul>
@@ -50,26 +50,26 @@
         <div class="section" id="section-2">
             <div class="page" id="page-1">
                 <h1>About Me</h1>
-                <div class="box">
+                <div class="box box-1">
                     <div class="chart-div">
                         <div class="chart">
                             <h2>HTML</h2>
-                            <div class="bar-1 bar"></div>
-                            <h4>89%</h4>
+                            <div class="bar-1 bar" id="bar-1"></div>
+                            <h4 id="html-percentage">0%</h4>
                         </div>
                         <div class="chart">
                             <h2>CSS</h2>
-                            <div class="bar-2 bar"></div>
-                            <h4>73%</h4>
+                            <div class="bar-2 bar" id="bar-2"></div>
+                            <h4 id="css-percentage">0%</h4>
                         </div>
                         <div class="chart">
                             <h2>JS</h2>
-                            <div class="bar-3 bar"></div>
-                            <h4>56%</h4>
+                            <div class="bar-3 bar" id="bar-3"></div>
+                            <h4 id="js-percentage">0%</h4>
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box box-2">
                     <p id="para">hey, my name is sagar i am a web developer i know many languages like HTML, CSS, JS,
                         Talwind CSS, React JS etc.. . i like to make amazing websites like this i have created this
                         website to show you my all amazing websites and projects that i have ever made, if you have any
@@ -80,12 +80,12 @@
                 <div class="form-hedding-div">
                     <h1>Contact Us</h1>
                 </div>
-                <form action="">
+                <form action="" onsubmit="sendData(); reset(); return false;">
                     <div class="input-div">
-                        <input type="email" name="email" class="email-input" placeholder="Please Enter Your Email">
+                        <input type="email" name="email" class="email-input" placeholder="Please Enter Your Email" required id="email">
                     </div>
                     <div class="massage-input-div">
-                        <textarea name="massage" cols="30" rows="10" class="massage"></textarea>
+                        <textarea name="massage" cols="30" rows="10" class="massage" minlength="3" id="msg"></textarea>
                     </div>
                     <div class="btn-div">
                         <button type="submit" class="submit">Submit</button>
@@ -110,6 +110,7 @@
             </div>
         </div>
     </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="JS/main.js"></script>
 </body>
 
