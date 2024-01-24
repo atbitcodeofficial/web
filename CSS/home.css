@@ -17,6 +17,7 @@ body {
 
 .main-div {
     position: relative;
+    min-height: 100vh;
 }
 
 html::-webkit-scrollbar {
@@ -339,7 +340,7 @@ nav {
 }
 
 #section-2 #page-1 .box {
-    height: 40%;
+    height: 45%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -347,6 +348,13 @@ nav {
     flex-direction: column; 
     padding: 10px;
     gap: 10px;
+}
+
+#section-2 #page-1 .box-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #section-2 #page-1 .box .chart-div {
@@ -368,21 +376,26 @@ nav {
 }
 
 #section-2 #page-1 .box .chart-div .chart .bar {
-    height: 20px;
-    width: 70%;
+    height: 10px;
+    width: 10px;
     background-color: red;
+    transition: all 0.8s ease-in;
+    -webkit-transition: all 0.8s ease-in;
+    -moz-transition: all 0.8s ease-in;
+    -ms-transition: all 0.8s ease-in;
+    -o-transition: all 0.8s ease-in;
 }
 
 #section-2 #page-1 .box .chart-div .chart .bar-1 {
-    width: 89%;
+    /* width: 89%; */
     background-color: lightcoral;
 }
 #section-2 #page-1 .box .chart-div .chart .bar-2 {
-    width: 73%;
+    /* width: 73%; */
     background-color: lightblue;
 }
 #section-2 #page-1 .box .chart-div .chart .bar-3 {
-    width: 58%;
+    /* width: 58%; */
     background-color: yellow;
 }
 
@@ -390,7 +403,7 @@ nav {
     text-transform: capitalize;
     font-weight: 100;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin-top: 30px;
+    letter-spacing: 2px;
 }
 
 .footer {
