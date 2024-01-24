@@ -69,6 +69,9 @@
     #section-1 h1 {
         font-size: 80px;
     }
+    #section-1 h3 {
+        font-size: 17px;
+    }
     .footer {
         flex-wrap: wrap;
     }
@@ -90,15 +93,18 @@
         -o-border-radius: 0px;
 }
 #section-2 #page-1 {
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+.card-body {
+    width: 100vw;
 }
 }
 
 @media screen and (max-width: 500px) {
     #section-1 h1 {
         font-size: 60px;
-    }
+    }   
 }
 
 @media screen and (max-width: 400px) {
